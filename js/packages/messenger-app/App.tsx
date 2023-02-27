@@ -24,6 +24,7 @@ import { isReadyRef, navigationRef } from '@berty/navigation'
 import { Navigation } from '@berty/navigation/stacks'
 import reduxStore from '@berty/redux/store'
 
+import StorybookUIRoot from '../../.storybook'
 import { CustomIconsPack } from './custom-icons'
 import { FeatherIconsPack } from './feather-icons'
 
