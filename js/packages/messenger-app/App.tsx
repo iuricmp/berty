@@ -24,8 +24,11 @@ import { isReadyRef, navigationRef } from '@berty/navigation'
 import { Navigation } from '@berty/navigation/stacks'
 import reduxStore from '@berty/redux/store'
 
+import StorybookUIRoot from '../../.storybook/Storybook'
 import { CustomIconsPack } from './custom-icons'
 import { FeatherIconsPack } from './feather-icons'
+
+// export { StorybookUIRoot as default }
 
 const BootSplashInhibitor: React.FC = () => {
 	useMountEffect(() => {
@@ -100,31 +103,15 @@ const App: React.FC = () => {
 		return null
 	}
 
+	return <StorybookUIRoot />
+
 	return (
 		<SafeAreaProvider>
 			<AppDimensionsProvider>
 				<StyleProvider>
 					<ReduxProvider store={reduxStore}>
 						<IconRegistry icons={[EvaIconsPack, FeatherIconsPack, CustomIconsPack]} />
-						<UIKittenProvider>
-							<Background>
-								<ErrorScreen>
-									<NavigationContainer
-										ref={navigationRef}
-										onReady={() => {
-											isReadyRef.current = true
-										}}
-									>
-										<PermissionsProvider>
-											<NotificationProvider>
-												{Platform.OS !== 'web' ? <BootSplashInhibitor /> : null}
-												<Navigation />
-											</NotificationProvider>
-										</PermissionsProvider>
-									</NavigationContainer>
-								</ErrorScreen>
-							</Background>
-						</UIKittenProvider>
+						<StorybookUIRoot />
 					</ReduxProvider>
 				</StyleProvider>
 			</AppDimensionsProvider>

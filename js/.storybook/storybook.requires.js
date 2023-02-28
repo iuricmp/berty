@@ -37,7 +37,9 @@ if (parameters) {
 }
 
 const getStories = () => {
-  return {};
+  return {
+    "./packages/components/buttons/Button.stories.tsx": require("../packages/components/buttons/Button.stories.tsx"),
+  };
 };
 
 configure(getStories, module, false);
