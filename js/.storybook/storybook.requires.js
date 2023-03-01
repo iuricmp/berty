@@ -39,6 +39,7 @@ if (parameters) {
 const getStories = () => {
   return {
     "./packages/components/buttons/Button.stories.tsx": require("../packages/components/buttons/Button.stories.tsx"),
+    "./packages/components/controls/Controls.stories.tsx": require("../packages/components/controls/Controls.stories.tsx"),
   };
 };
 
