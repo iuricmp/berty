@@ -1,5 +1,6 @@
 import { storiesOf } from '@storybook/react-native'
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { ScrollView, Text, View } from 'react-native'
 
 import { AltToggle, StreamProgress, TabBar, Toggle } from '.'
@@ -36,21 +37,23 @@ const AltToggles = () => {
 }
 
 const Tabs = () => {
+	const { t } = useTranslation()
 	return (
 		<>
+			<Text>Tabs: </Text>
+			<Spacer />
 			<View>
 				<TabBar
 					tabs={[
-						{ name: 'tab 1 name' },
-						{ name: 'info' },
-						{ name: 'disabled', buttonDisabled: true },
+						{ name: t('tabs.qr') },
+						{ name: t('tabs.fingerprint') },
+						{ name: t('tabs.info') },
+						{ name: t('tabs.devices') },
 					]}
 					onTabChange={onPress}
 				/>
-				<View>
-					<Text>tab 1 content</Text>
-				</View>
 			</View>
+			<Spacer />
 		</>
 	)
 }
@@ -58,7 +61,10 @@ const Tabs = () => {
 const ProgressBars = () => {
 	return (
 		<>
+			<Text>Progress Bars: </Text>
+			<Spacer />
 			<StreamProgress />
+			<Spacer />
 		</>
 	)
 }
@@ -80,12 +86,8 @@ storiesOf('Controls', module)
 			<AltToggles />
 			<Spacer />
 
-			<Text>Progress Bars: </Text>
-			<Spacer />
 			<ProgressBars />
-			<Spacer />
 
-			<Text>Tabs: </Text>
 			<Tabs />
 		</>
 	))
