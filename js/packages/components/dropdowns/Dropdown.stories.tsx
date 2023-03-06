@@ -1,27 +1,12 @@
 import { storiesOf } from '@storybook/react-native'
+import Long from 'long'
 import React, { useState } from 'react'
 import { ScrollView, Text, View } from 'react-native'
-import Long from 'long'
-
-import {
-	TextualDropdown,
-	AccountsDropdown,
-	MembersDropdown,
-	RelayDropdown,
-	RelayAltDropdown,
-	BootstrapDropdown,
-	BootstrapAltDropdown,
-	RendezvousDropdown,
-	RendezvousAltDropdown,
-	LinkedIdentityDropdown,
-	DebugServerAddr,
-	DebugServersAddrCapabilities,
-} from '.'
-
-import { AppDecorator } from '../../../.storybook/preview'
 
 import beapi from '@berty/api'
-import { numberifyLong } from '@berty/utils/convert/long'
+
+import { TextualDropdown, MembersDropdown } from '.'
+import { AppDecorator } from '../../../.storybook/preview'
 
 const Spacer = () => <View style={{ height: 16 }} />
 

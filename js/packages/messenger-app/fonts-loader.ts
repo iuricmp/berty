@@ -1,14 +1,13 @@
+import * as Font from 'expo-font'
+import React from 'react'
+
 import BoldOpenSans from '@berty/assets/font/OpenSans-Bold.ttf'
 import LightOpenSans from '@berty/assets/font/OpenSans-Light.ttf'
 import LightItalicOpenSans from '@berty/assets/font/OpenSans-LightItalic.ttf'
 import RegularOpenSans from '@berty/assets/font/OpenSans-Regular.ttf'
 import SemiBoldOpenSans from '@berty/assets/font/OpenSans-SemiBold.ttf'
 import SemiBoldItalicOpenSans from '@berty/assets/font/OpenSans-SemiBoldItalic.ttf'
-
-import * as Font from 'expo-font'
-
-import { useMountEffect, useThemeColor } from '@berty/hooks'
-import React from 'react'
+import { useMountEffect } from '@berty/hooks'
 
 // load Open Sans font for web
 export const useFonts = () => {

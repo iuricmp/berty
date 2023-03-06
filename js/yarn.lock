@@ -4512,10 +4512,10 @@
     unfetch "^4.2.0"
     util-deprecate "^1.0.2"
 
-"@storybook/react-native@^6.5.0-rc.3":
-  version "6.5.0-rc.3"
-  resolved "https://registry.yarnpkg.com/@storybook/react-native/-/react-native-6.5.0-rc.3.tgz#3d1c08379188d104a31e2741f28456d2e55541fe"
-  integrity sha512-ntSFdU82vjQjiP2rVbOu7VfZkto9GydaoiY06Bgo+5PjRHE8WJjnQ9WR5rW+6nB1sm7kT9HfFk5Rz2VlWit4Ug==
+"@storybook/react-native@^6.5.0-rc.2":
+  version "6.5.0-rc.5"
+  resolved "https://registry.yarnpkg.com/@storybook/react-native/-/react-native-6.5.0-rc.5.tgz#c86a4ba4c5d92cef174ed2ceeb665a9738e4215a"
+  integrity sha512-dzcQDQaoR/d62W5NhiuIRgkzWa6UIOlzqA5+znqltpuitgoe2vGYhOXvnUbErD4TCO8yB1valcWpfZ48k4TZNg==
   dependencies:
     "@emotion/core" "^10.0.20"
     "@emotion/native" "^10.0.14"
@@ -13169,6 +13169,11 @@ phin@^2.9.1:
   version "2.9.3"
   resolved "https://registry.yarnpkg.com/phin/-/phin-2.9.3.tgz#f9b6ac10a035636fb65dfc576aaaa17b8743125c"
   integrity sha512-CzFr90qM24ju5f88quFC/6qohjC144rehe5n6DH900lgXmUe86+xCKc10ev56gRKC4/BkHUoG4uSiQgBiIXwDA==
+
+phone@^3.1.33:
+  version "3.1.35"
+  resolved "https://registry.yarnpkg.com/phone/-/phone-3.1.35.tgz#31d35fd6a70aae8f5594371817dfa7c6e3b85973"
+  integrity sha512-OEF2yXxJ2kTzMECk+ymbAmbYuucBNIMeYcqsiZD5Kz2QrRAP2BOEuerqalaC/chkAHLH3MXWKRK3qu07AvlRuQ==
 
 picocolors@^1.0.0:
   version "1.0.0"
