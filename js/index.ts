@@ -13,8 +13,6 @@ import App from '@berty/messenger-app/App'
 import { name as appName } from '@berty/messenger-app/app.json'
 import BridgeLogger from '@berty/native-modules/GoBridge/logger'
 
-import Storybook from './.storybook'
-
 protobuf.util.toJSONOptions = { longs: String, enums: Number, json: true }
 
 if (typeof Buffer === 'undefined') {
@@ -29,6 +27,7 @@ if (!__DEV__) {
 initI18N()
 
 if (__DEV__ && process.env.STORYBOOK) {
+	const Storybook = require('./.storybook').default
 	AppRegistry.registerComponent(appName, () => Storybook)
 } else {
 	AppRegistry.registerComponent(appName, () => App)
