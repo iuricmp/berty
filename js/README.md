@@ -18,6 +18,7 @@ Run iOS app in debug mode:
 
 ```bash
 $ make ios.debug
+# or setting the device id:
 $ IOS_DEVICE="your-emulator-id" make ios.debug
 
 # 💡 You can check available virtual iOS devices with
