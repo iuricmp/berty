@@ -79,12 +79,13 @@ $ make help
 
    ```bash
    $ cd berty # root folder
+   
    $ make asdf.install_tools
-
-   # if you have an issue related with gpg, eg:
-   #  - "Missing one or more of the following dependencies: tar, gpg"
-   # Try solving this with `$ brew install gpg`
    ```
+   
+   If you have an issue related with gpg, eg:
+   "Missing one or more of the following dependencies: tar, gpg"
+   You can try solve this issue using: `$ brew install gpg`
 
 3. Install the [General React Native requirements](#general-react-native-requirements)
 4. [Watchman](https://facebook.github.io/watchman/docs/install/) to enable live reloading
@@ -97,6 +98,13 @@ $ make help
 
 - Mac OS X
 - [XCode _(latest stable)_](https://developer.apple.com/download/all/?q=Xcode)
+
+Run:
+   ```bash
+   $ cd js
+   
+   $ make ios.app_deps
+   ```   
 
 </details>
 
@@ -114,6 +122,13 @@ $ make help
 - **Java 8**. If you already have another version of Java, you can use a version manager and Homebrew to add another installation. Some nice instructions are given [here](https://java.christmas/2019/16).
 
 💡 Check you can run all the commands `sdkmanager`, `emulator`, `ndk-bundle`, and `adb` (these are binaries in `$ANDROID_HOME` subfolders)
+
+Run:
+   ```bash
+   $ cd js
+   
+   $ make android.app_deps
+   ```   
 
 </details>
 
