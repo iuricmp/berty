@@ -4,11 +4,11 @@
 
 This folder contains most of the Typescript and Javascript code needed for the Berty Messenger mobile apps. The code is **organized into packages** in [./packages](./packages). Only some of them are freestanding.
 
-## Run the ap
+## Run the app
 
 💡 First, verify you have the relevant [requirements](#Setup) 😉
 
-Build and serve mobile UI
+Build and serve mobile UI:
 
 ```bash
 $ make metro.start
@@ -17,6 +17,9 @@ $ make metro.start
 Run iOS app in debug mode:
 
 ```bash
+# Generate dependencies (Xcode files, gomobile, etc.):
+$ make ios.app_deps
+
 $ make ios.debug
 # or setting the device id:
 $ IOS_DEVICE="your-emulator-id" make ios.debug
@@ -28,10 +31,12 @@ $ xcrun simctl list
 Run Android in debug mode:
 
 ```bash
+# Generate dependencies (Android files, gomobile, etc.):
+$ make android.app_deps
+
 $ make android.debug
 # Optional if using only one device
 # Run this with different Android device IDs
-$ ANDROID_DEVICE="your-emulator-id" make android.debug
 $ ANDROID_DEVICE="your-emulator-id" make android.debug
 
 # 💡 You can check available Android Virtual Devices with
@@ -58,7 +63,7 @@ $ make web.debug
 
 List of all available commands:
 
-```shell
+```bash
 $ make help
 ```
 
@@ -80,10 +85,10 @@ $ make help
 
    ```bash
    $ cd berty # root folder
-   
+
    $ make asdf.install_tools
    ```
-   
+
    If you have an issue related with gpg, eg:
    "Missing one or more of the following dependencies: tar, gpg"
    You can try solve this issue using: `$ brew install gpg`
@@ -101,11 +106,12 @@ $ make help
 - [XCode _(latest stable)_](https://developer.apple.com/download/all/?q=Xcode)
 
 Run:
-   ```bash
-   $ cd js
-   
-   $ make ios.app_deps
-   ```   
+
+```bash
+$ cd js
+
+$ make ios.app_deps
+```
 
 </details>
 
@@ -125,11 +131,12 @@ Run:
 💡 Check you can run all the commands `sdkmanager`, `emulator`, `ndk-bundle`, and `adb` (these are binaries in `$ANDROID_HOME` subfolders)
 
 Run:
-   ```bash
-   $ cd js
-   
-   $ make android.app_deps
-   ```   
+
+```bash
+$ cd js
+
+$ make android.app_deps
+```
 
 </details>
 
