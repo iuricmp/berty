@@ -6,7 +6,7 @@ A simple Makefile that helps running multiple berty mini instances
 
 ```console
 # start a berty mini instance in a shell
-$ make run ID=1
+$ ID=1 make run
 Account
  9L7gKAZS                             /\
                                  /\  / /\  ______
