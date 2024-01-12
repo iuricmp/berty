@@ -179,6 +179,9 @@ targets:
     - sdk: usr/lib/libresolv.tbd
       root: SDKROOT
       link: true
+    - sdk: usr/lib/libresolv.9.tbd
+      root: SDKROOT
+      link: true
     - framework: ./Frameworks/Bertybridge.xcframework
       embed: false
     - framework: "${SRCROOT}/../node_modules/expo-file-system/ios/EXFileSystem.xcframework"
@@ -261,6 +264,9 @@ targets:
       - framework: "${PODS_ROOT}/OpenSSL-Universal/Frameworks/OpenSSL.xcframework"
         embed: false
       - sdk: usr/lib/libresolv.tbd
+        root: SDKROOT
+        link: true
+      - sdk: usr/lib/libresolv.9.tbd
         root: SDKROOT
         link: true
 
